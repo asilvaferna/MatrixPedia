@@ -12,11 +12,13 @@ import Alamofire
 final class CharacterListViewController: UITableViewController {
 
     // MARK: - Private properties
-    private var characters: [MatrixCharacter] = [] {
+    private var characters: [CharacterViewModel] = [] {
         didSet {
             tableView.reloadData()
         }
     }
+
+    private var presenter: CharacterListPresenter?
 
     // MARK: - View lifecycle methods
     override func viewDidLoad() {
@@ -24,7 +26,7 @@ final class CharacterListViewController: UITableViewController {
 
         tableViewSetup()
 
-        loadCharacters()
+        presenter?.viewDidLoad()
     }
 
 }
@@ -35,22 +37,6 @@ private extension CharacterListViewController {
         self.title = "Characters"
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 40
-    }
-
-    func loadCharacters() {
-        Alamofire
-            .request("http://127.0.0.1/characters")
-            .responseJSON { [weak self] response in
-                if let data = response.data, let jsonData = try? JSONSerialization.jsonObject(with: data, options: .allowFragments), let characters = jsonData as? [[String: Any]] {
-                    var newCharacters = [MatrixCharacter]()
-                    characters.forEach { character in
-                        guard let newCharacter = MatrixCharacter(json: character) else { return }
-                        newCharacters.append(newCharacter)
-                    }
-
-                    self?.characters = newCharacters
-                }
-            }
     }
 }
 
@@ -73,15 +59,14 @@ extension CharacterListViewController {
         }()
 
         let character = characters[indexPath.row]
-        cell.textLabel?.text = character.alias
-        cell.detailTextLabel?.text = character.type.rawValue.capitalized
+        cell.textLabel?.text = character.name
+        cell.detailTextLabel?.text = character.type
         return cell
     }
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let selectedCharacter = characters[indexPath.row]
-        let characterProfileViewController = CharacterProfileViewController(withCharacterId: selectedCharacter.id)
-        navigationController?.pushViewController(characterProfileViewController, animated: true)
         tableView.deselectRow(at: indexPath, animated: true)
+        let selectedCharacter = characters[indexPath.row]
+        presenter?.userDidSelectCharacter(withId: selectedCharacter.id)
     }
 }
