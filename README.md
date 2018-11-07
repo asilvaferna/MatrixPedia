@@ -1,4 +1,4 @@
-# MatrixPedia
+# MatrixPedia [WIP]
 
 A CRUD app that demonstrates the benefits of using CLEAN architectures.
 
