@@ -8,27 +8,14 @@
 
 import Foundation
 
-enum MatrixCharacterType: String {
+enum MatrixCharacterType: String, Codable {
     case resistance, programs, exiles, potentials, truce
 }
 
-final class MatrixCharacter {
+struct MatrixCharacter: Codable {
     let id: Int
     let alias: String
     let type: MatrixCharacterType
-
-    init?(json: [String: Any]) {
-        guard let id = json["id"] as? Int,
-            let alias = json["alias"] as? String,
-            let typeString = json["type"] as? String,
-            let type = MatrixCharacterType(rawValue: typeString) else {
-                return nil
-        }
-
-        self.id = id
-        self.alias = alias
-        self.type = type
-    }
 }
 
 
