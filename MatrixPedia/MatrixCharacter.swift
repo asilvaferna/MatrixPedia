@@ -12,7 +12,7 @@ enum MatrixCharacterType: String {
     case resistance, programs, exiles, potentials, truce
 }
 
-class MatrixCharacter {
+final class MatrixCharacter {
     let id: Int
     let alias: String
     let type: MatrixCharacterType

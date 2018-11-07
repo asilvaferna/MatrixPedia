@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class CharacterProfileViewController: UIViewController {
+final class CharacterProfileViewController: UIViewController {
 
     // MARK: Private properties
     private let characterId: Int

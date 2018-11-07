@@ -9,14 +9,16 @@
 import UIKit
 import Alamofire
 
-class CharacterListViewController: UITableViewController {
+final class CharacterListViewController: UITableViewController {
 
-    var characters: [MatrixCharacter] = [] {
+    // MARK: - Private properties
+    private var characters: [MatrixCharacter] = [] {
         didSet {
             tableView.reloadData()
         }
     }
 
+    // MARK: - View lifecycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +29,7 @@ class CharacterListViewController: UITableViewController {
 
 }
 
+// MARK: - Private methods
 private extension CharacterListViewController {
     func tableViewSetup() {
         self.title = "Characters"
@@ -51,6 +54,7 @@ private extension CharacterListViewController {
     }
 }
 
+// MARK: - UITableView Datasource & Delegate
 extension CharacterListViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1

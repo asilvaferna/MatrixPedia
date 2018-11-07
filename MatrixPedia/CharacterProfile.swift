@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CharacterProfile {
+final class CharacterProfile {
     let id: Int
     let characterId: Int
     let alias: String
