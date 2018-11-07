@@ -13,6 +13,8 @@
 		206A38F3219381DF00E2F689 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 206A38F2219381DF00E2F689 /* LaunchScreen.storyboard */; };
 		206A38F5219381F900E2F689 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A38F4219381F900E2F689 /* CharacterListViewController.swift */; };
 		206A38F72193822200E2F689 /* MatrixCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A38F62193822200E2F689 /* MatrixCharacter.swift */; };
+		206A38F9219388E700E2F689 /* CharacterProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A38F8219388E700E2F689 /* CharacterProfileViewController.swift */; };
+		206A38FB21938BEB00E2F689 /* CharacterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A38FA21938BEB00E2F689 /* CharacterProfile.swift */; };
 		7FAF65D773742567063147C8 /* Pods_MatrixPediaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F19F56A9FD524C2C784C6A1 /* Pods_MatrixPediaTests.framework */; };
 		AAA348DB444F913F825274DD /* Pods_MatrixPedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBAF43F1A9C3C0A1EAC461F /* Pods_MatrixPedia.framework */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		206A38F2219381DF00E2F689 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		206A38F4219381F900E2F689 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
 		206A38F62193822200E2F689 /* MatrixCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixCharacter.swift; sourceTree = "<group>"; };
+		206A38F8219388E700E2F689 /* CharacterProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProfileViewController.swift; sourceTree = "<group>"; };
+		206A38FA21938BEB00E2F689 /* CharacterProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterProfile.swift; sourceTree = "<group>"; };
 		2FB1E376B50F78412CC4E058 /* Pods-MatrixPediaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3F19F56A9FD524C2C784C6A1 /* Pods_MatrixPediaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MatrixPediaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		582B3656599B4EFAD4C5A3BF /* Pods-MatrixPediaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MatrixPediaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MatrixPediaTests/Pods-MatrixPediaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				206A38F2219381DF00E2F689 /* LaunchScreen.storyboard */,
 				206A38F4219381F900E2F689 /* CharacterListViewController.swift */,
 				206A38F62193822200E2F689 /* MatrixCharacter.swift */,
+				206A38F8219388E700E2F689 /* CharacterProfileViewController.swift */,
+				206A38FA21938BEB00E2F689 /* CharacterProfile.swift */,
 			);
 			path = MatrixPedia;
 			sourceTree = "<group>";
@@ -300,8 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206A38F9219388E700E2F689 /* CharacterProfileViewController.swift in Sources */,
 				206A38F72193822200E2F689 /* MatrixCharacter.swift in Sources */,
 				206A38F5219381F900E2F689 /* CharacterListViewController.swift in Sources */,
+				206A38FB21938BEB00E2F689 /* CharacterProfile.swift in Sources */,
 				206A38D32193814E00E2F689 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
