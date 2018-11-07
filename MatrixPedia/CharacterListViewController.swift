@@ -74,10 +74,10 @@ extension CharacterListViewController {
         return cell
     }
 
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let selectedCharacter = characters[indexPath.row]
-//        let characterProfileViewController = CharacterProfileViewController(withCharacterId: characterSelected.id)
-//        navigationController?.pushViewController(characterProfileViewController, animated: true)
-//        tableView.deselectRow(at: indexPath, animated: true)
-//    }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedCharacter = characters[indexPath.row]
+        let characterProfileViewController = CharacterProfileViewController(withCharacterId: selectedCharacter.id)
+        navigationController?.pushViewController(characterProfileViewController, animated: true)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
