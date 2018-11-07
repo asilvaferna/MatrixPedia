@@ -1,5 +1,5 @@
 //
-//  NetworkOperation.swift
+//  MatrixNetworkOperation.swift
 //  MatrixPedia
 //
 //  Created by Adrián Silva on 07/11/2018.
