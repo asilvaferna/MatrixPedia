@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20644210219394CB0036D63F /* MatrixNetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064420F219394CB0036D63F /* MatrixNetworkOperation.swift */; };
+		20644212219395800036D63F /* NetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20644211219395800036D63F /* NetworkDataManager.swift */; };
+		20644214219397C60036D63F /* CharacterListNetworkOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20644213219397C60036D63F /* CharacterListNetworkOperation.swift */; };
+		20644216219399C80036D63F /* CharacterListRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20644215219399C80036D63F /* CharacterListRepository.swift */; };
+		2064421821939B160036D63F /* CharactersNetworkDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064421721939B160036D63F /* CharactersNetworkDataSource.swift */; };
+		2064421A21939D010036D63F /* CharacterListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064421921939D010036D63F /* CharacterListInteractor.swift */; };
+		2064421C21939E610036D63F /* CharacterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064421B21939E610036D63F /* CharacterListPresenter.swift */; };
+		2064421E2193A0EB0036D63F /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064421D2193A0EB0036D63F /* CharacterViewModel.swift */; };
+		206442202193A1FB0036D63F /* CharacterListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2064421F2193A1FB0036D63F /* CharacterListRouter.swift */; };
+		206442222193A33B0036D63F /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206442212193A33B0036D63F /* MainRouter.swift */; };
+		206442242193A3890036D63F /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206442232193A3890036D63F /* ServiceLocator.swift */; };
+		206442262193A3D90036D63F /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206442252193A3D90036D63F /* UIApplication+Extensions.swift */; };
+		206442282193A5660036D63F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206442272193A5660036D63F /* UIViewController+Extension.swift */; };
 		206A38D32193814E00E2F689 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A38D22193814E00E2F689 /* AppDelegate.swift */; };
 		206A38DA2193815000E2F689 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 206A38D92193815000E2F689 /* Assets.xcassets */; };
 		206A38E82193815000E2F689 /* MatrixPediaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 206A38E72193815000E2F689 /* MatrixPediaTests.swift */; };
@@ -30,6 +43,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2064420F219394CB0036D63F /* MatrixNetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatrixNetworkOperation.swift; sourceTree = "<group>"; };
+		20644211219395800036D63F /* NetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataManager.swift; sourceTree = "<group>"; };
+		20644213219397C60036D63F /* CharacterListNetworkOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListNetworkOperation.swift; sourceTree = "<group>"; };
+		20644215219399C80036D63F /* CharacterListRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRepository.swift; sourceTree = "<group>"; };
+		2064421721939B160036D63F /* CharactersNetworkDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersNetworkDataSource.swift; sourceTree = "<group>"; };
+		2064421921939D010036D63F /* CharacterListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractor.swift; sourceTree = "<group>"; };
+		2064421B21939E610036D63F /* CharacterListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListPresenter.swift; sourceTree = "<group>"; };
+		2064421D2193A0EB0036D63F /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		2064421F2193A1FB0036D63F /* CharacterListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListRouter.swift; sourceTree = "<group>"; };
+		206442212193A33B0036D63F /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		206442232193A3890036D63F /* ServiceLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		206442252193A3D90036D63F /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		206442272193A5660036D63F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		206A38CF2193814E00E2F689 /* MatrixPedia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatrixPedia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		206A38D22193814E00E2F689 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		206A38D92193815000E2F689 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -70,6 +96,96 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		206442042193941A0036D63F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				206442252193A3D90036D63F /* UIApplication+Extensions.swift */,
+				206442272193A5660036D63F /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		20644205219394210036D63F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				206442212193A33B0036D63F /* MainRouter.swift */,
+				206442232193A3890036D63F /* ServiceLocator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		20644206219394280036D63F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				20644209219394420036D63F /* CharacterList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		206442072193942D0036D63F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2064420F219394CB0036D63F /* MatrixNetworkOperation.swift */,
+				20644211219395800036D63F /* NetworkDataManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		20644208219394330036D63F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		20644209219394420036D63F /* CharacterList */ = {
+			isa = PBXGroup;
+			children = (
+				206442292193B0E40036D63F /* Router */,
+				2064420E219394610036D63F /* Data */,
+				2064420D2193945E0036D63F /* Domain */,
+				2064420C219394540036D63F /* Presentation */,
+			);
+			path = CharacterList;
+			sourceTree = "<group>";
+		};
+		2064420C219394540036D63F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				2064421B21939E610036D63F /* CharacterListPresenter.swift */,
+				2064421D2193A0EB0036D63F /* CharacterViewModel.swift */,
+				206A38F4219381F900E2F689 /* CharacterListViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		2064420D2193945E0036D63F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				2064421921939D010036D63F /* CharacterListInteractor.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		2064420E219394610036D63F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				206A38F62193822200E2F689 /* MatrixCharacter.swift */,
+				20644213219397C60036D63F /* CharacterListNetworkOperation.swift */,
+				20644215219399C80036D63F /* CharacterListRepository.swift */,
+				2064421721939B160036D63F /* CharactersNetworkDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		206442292193B0E40036D63F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2064421F2193A1FB0036D63F /* CharacterListRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		206A38C62193814E00E2F689 = {
 			isa = PBXGroup;
 			children = (
@@ -93,12 +209,15 @@
 		206A38D12193814E00E2F689 /* MatrixPedia */ = {
 			isa = PBXGroup;
 			children = (
+				20644208219394330036D63F /* Resources */,
+				206442072193942D0036D63F /* Network */,
+				20644206219394280036D63F /* Modules */,
+				20644205219394210036D63F /* Base */,
+				206442042193941A0036D63F /* Extensions */,
 				206A38D22193814E00E2F689 /* AppDelegate.swift */,
 				206A38D92193815000E2F689 /* Assets.xcassets */,
 				206A38DE2193815000E2F689 /* Info.plist */,
 				206A38F2219381DF00E2F689 /* LaunchScreen.storyboard */,
-				206A38F4219381F900E2F689 /* CharacterListViewController.swift */,
-				206A38F62193822200E2F689 /* MatrixCharacter.swift */,
 				206A38F8219388E700E2F689 /* CharacterProfileViewController.swift */,
 				206A38FA21938BEB00E2F689 /* CharacterProfile.swift */,
 			);
@@ -306,10 +425,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206442282193A5660036D63F /* UIViewController+Extension.swift in Sources */,
 				206A38F9219388E700E2F689 /* CharacterProfileViewController.swift in Sources */,
+				2064421821939B160036D63F /* CharactersNetworkDataSource.swift in Sources */,
 				206A38F72193822200E2F689 /* MatrixCharacter.swift in Sources */,
+				20644214219397C60036D63F /* CharacterListNetworkOperation.swift in Sources */,
+				206442262193A3D90036D63F /* UIApplication+Extensions.swift in Sources */,
+				206442242193A3890036D63F /* ServiceLocator.swift in Sources */,
+				2064421C21939E610036D63F /* CharacterListPresenter.swift in Sources */,
+				206442222193A33B0036D63F /* MainRouter.swift in Sources */,
 				206A38F5219381F900E2F689 /* CharacterListViewController.swift in Sources */,
+				2064421A21939D010036D63F /* CharacterListInteractor.swift in Sources */,
 				206A38FB21938BEB00E2F689 /* CharacterProfile.swift in Sources */,
+				2064421E2193A0EB0036D63F /* CharacterViewModel.swift in Sources */,
+				20644212219395800036D63F /* NetworkDataManager.swift in Sources */,
+				206442202193A1FB0036D63F /* CharacterListRouter.swift in Sources */,
+				20644210219394CB0036D63F /* MatrixNetworkOperation.swift in Sources */,
+				20644216219399C80036D63F /* CharacterListRepository.swift in Sources */,
 				206A38D32193814E00E2F689 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

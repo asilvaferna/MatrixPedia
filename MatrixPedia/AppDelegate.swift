@@ -13,17 +13,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        let rootController = CharacterListViewController()
-        let navigationController = UINavigationController(rootViewController: rootController)
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
-        window?.makeKeyAndVisible()
+        createWindow()
+        installRootViewController()
 
         return true
+    }
+
+    func createWindow() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.makeKeyAndVisible()
+        self.window = window
+    }
+
+    func installRootViewController() {
+        let handler: MainViewControllerHandler = UIApplication.serviceLocator.mainRouter
+        handler.installMainViewController()
     }
 }
 
