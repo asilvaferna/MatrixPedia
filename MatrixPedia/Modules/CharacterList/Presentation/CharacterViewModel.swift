@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct CharacterViewModel {
+    let id: Int
+    let name: String
+    let type: String
+}

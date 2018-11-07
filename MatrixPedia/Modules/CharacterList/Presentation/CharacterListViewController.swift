@@ -12,13 +12,13 @@ import Alamofire
 final class CharacterListViewController: UITableViewController {
 
     // MARK: - Private properties
-    private var characters: [CharacterViewModel] = [] {
+    var characters: [CharacterViewModel] = [] {
         didSet {
             tableView.reloadData()
         }
     }
 
-    private var presenter: CharacterListPresenter?
+    var presenter: CharacterListPresenter?
 
     // MARK: - View lifecycle methods
     override func viewDidLoad() {
@@ -68,5 +68,15 @@ extension CharacterListViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         let selectedCharacter = characters[indexPath.row]
         presenter?.userDidSelectCharacter(withId: selectedCharacter.id)
+    }
+}
+
+extension CharacterListViewController: CharacterListPresenterOutput {
+    func loadCharacters(_ characters: [CharacterViewModel]) {
+        self.characters = characters
+    }
+
+    func showError(message: String) {
+        showErrorAlert(message: message)
     }
 }
